@@ -20,28 +20,37 @@ const playRound = (playerSelection, computerSelection) => {
   let msg = "";
 
   if (playerSelection == "rock") {
-    if (computerSelection == "rock") {
-      msg = "You both played ROCK. It's a tie.";
-    } else if (computerSelection == "paper") {
-      msg = "You played ROCK. Computer played PAPER. You lost.";
-    } else if (computerSelection == "scissors") {
-      msg = "You played ROCK. Computer played SCISSORS. You won!";
+    switch (computerSelection) {
+      case "rock":
+        msg = "You both played ROCK. It's a tie.";
+        break;
+      case "paper":
+        msg = "You played ROCK. Computer played PAPER. You lost.";
+        break;
+      case "scissors":
+        msg = "You played ROCK. Computer played SCISSORS. You won!";
     }
   } else if (playerSelection == "paper") {
-    if (computerSelection == "paper") {
-      msg = "You both played PAPER. It's a tie.";
-    } else if (computerSelection == "scissors") {
-      msg = "You played PAPER. Computer played SCISSORS. You lost.";
-    } else if (computerSelection == "rock") {
-      msg = "You played PAPER. Computer played ROCK. You won!";
+    switch (computerSelection) {
+      case "rock":
+        msg = "You played PAPER. Computer played ROCK. You won!";
+        break;
+      case "paper":
+        msg = "You both played PAPER. It's a tie.";
+        break;
+      case "scissors":
+        msg = "You played PAPER. Computer played SCISSORS. You lose!";
     }
   } else if (playerSelection == "scissors") {
-    if (computerSelection == "scissors") {
-      msg = "You both played SCISSORS. It's a tie.";
-    } else if (computerSelection == "rock") {
-      msg = "You played SCISSORS. Computer played ROCK. You lost.";
-    } else if (computerSelection == "paper") {
-      msg = "You played SCISSORS. Computer played PAPER. You won!";
+    switch (computerSelection) {
+      case "rock":
+        msg = "You played SCISSORS. Computer played ROCK. You lost.";
+        break;
+      case "paper":
+        msg = "You played SCISSORS. Computer played PAPER. You won!";
+        break;
+      case "scissors":
+        msg = "You both played SCISSORS. It's a tie.";
     }
   } else {
     msg = "You need to input rock, paper, or scissors to play.";
