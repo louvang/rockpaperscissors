@@ -2,7 +2,7 @@
 
 This is a website that allows you to click and play Rock Paper Scissors against the "Computer". The prompt comes from [TheOdinProject](https://theodinproject.com/) in an effort to refresh myself with JavaScript and DOM.
 
-<a href="https://voidteddy.github.io/rockpaperscissors/" target="_blank"><img src="https://voidteddy.github.io/rockpaperscissors/img/preview.png" alt="Rock Paper Scissors Preview" width="750px" /></a>
+<center><a href="https://voidteddy.github.io/rockpaperscissors/" target="_blank"><img src="https://voidteddy.github.io/rockpaperscissors/img/preview.png" alt="Rock Paper Scissors Preview" width="750px" /></a></center>
 
 ## Gameplay
 
