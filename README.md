@@ -4,17 +4,17 @@ This is a website that allows you to click and play Rock Paper Scissors against 
 
 <a href="https://voidteddy.github.io/rockpaperscissors/" target="_blank"><img src="https://voidteddy.github.io/rockpaperscissors/img/preview.png" alt="Rock Paper Scissors Preview" width="750px" /></a>
 
-### Gameplay
+## Gameplay
 
 You, the player, must choose the 'weapon' of your choice to beat the computer. As with all games of Rock Paper Scissors, you never quite know what your opponent will play. It is simply by chance whether or not you will win.
 
 Whichever player reaches 5 points first wins the game. Simply click on the "Play Again" button to start over.
 
-### About Code
+## About Code
 
 This game uses plain vanilla JavaScript. There are two JS files. The `console.js` file loops the game for 5 rounds and logs each play in the console. The working file hooked up to the index page is `script.js` which uses DOM to make changes on the browser.
 
-### Thoughts
+## Thoughts
 
 This isn't my first time doing a project like this. I've actually done this exact project before although in a much different fashion and when I was less-versed with JavaScript. This time around, I find myself cementing the `addEventListener()` method.
 
@@ -47,6 +47,6 @@ const playRound = (e) => {
 };
 ```
 
-#### Possible Future Projects
+### Possible Future Projects
 
 I feel like Rock Paper Scissors would be a good way to cement React and its state-changing mechanics. I struggle a bit with React so I may consider making a React version of the game.
