@@ -1,8 +1,8 @@
-# [Rock Paper Scissors](https://voidteddy.github.io/rockpaperscissors/)
+# [Rock Paper Scissors](https://louvang.github.io/rockpaperscissors/)
 
 This is a website that allows you to click and play Rock Paper Scissors against the "Computer". The prompt comes from [TheOdinProject](https://theodinproject.com/) in an effort to refresh myself with JavaScript and DOM.
 
-<p align="center"><a href="https://voidteddy.github.io/rockpaperscissors/" target="_blank"><img src="https://voidteddy.github.io/rockpaperscissors/img/preview.png" alt="Rock Paper Scissors Preview" width="750px" /></a></p>
+<p align="center"><a href="https://louvang.github.io/rockpaperscissors/" target="_blank"><img src="https://louvang.github.io/rockpaperscissors/img/preview.png" alt="Rock Paper Scissors Preview" width="750px" /></a></p>
 
 ## Gameplay
 
@@ -23,13 +23,13 @@ When I started learning React, I had a very basic understanding of `addEventList
 This is a no-no as it will execute the function as soon as the page loads:
 
 ```javascript
-btn.addEventListener("click", alertFunction());
+btn.addEventListener('click', alertFunction());
 ```
 
 We want the function to execute when the button is clicked. So we need to take out the parentheses as follows:
 
 ```javascript
-btn.addEventListener("click", alertFunction);
+btn.addEventListener('click', alertFunction);
 ```
 
 The second parameter is the 'listener'. It's an object and it's waiting for the button to be clicked. As soon as that happens, the listener fires off what it's been told to do.
@@ -37,9 +37,9 @@ The second parameter is the 'listener'. It's an object and it's waiting for the 
 Now because this 'listener' is an object and not a function, your parameters will have to be added through `e` aka the event. All you need to do is define a parameter and reference it:
 
 ```javascript
-const playPaper = document.querySelector("#paper");
-playPaper.addEventListener("click", playRound);
-playPaper.selection = "paper"; // your parameter
+const playPaper = document.querySelector('#paper');
+playPaper.addEventListener('click', playRound);
+playPaper.selection = 'paper'; // your parameter
 
 // to access the parameter in your function
 const playRound = (e) => {
