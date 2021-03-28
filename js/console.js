@@ -3,13 +3,13 @@ const computerPlay = () => {
 
   switch (compsChoice) {
     case 1:
-      compsChoice = "rock";
+      compsChoice = 'rock';
       break;
     case 2:
-      compsChoice = "paper";
+      compsChoice = 'paper';
       break;
     case 3:
-      compsChoice = "scissors";
+      compsChoice = 'scissors';
       break;
   }
 
@@ -17,43 +17,43 @@ const computerPlay = () => {
 };
 
 const playRound = (playerSelection, computerSelection) => {
-  let msg = "";
+  let msg = '';
 
-  if (playerSelection == "rock") {
+  if (playerSelection == 'rock') {
     switch (computerSelection) {
-      case "rock":
+      case 'rock':
         msg = "You both played ROCK. It's a tie.";
         break;
-      case "paper":
-        msg = "You played ROCK. Computer played PAPER. You lost.";
+      case 'paper':
+        msg = 'You played ROCK. Computer played PAPER. You lost.';
         break;
-      case "scissors":
-        msg = "You played ROCK. Computer played SCISSORS. You won!";
+      case 'scissors':
+        msg = 'You played ROCK. Computer played SCISSORS. You won!';
     }
-  } else if (playerSelection == "paper") {
+  } else if (playerSelection == 'paper') {
     switch (computerSelection) {
-      case "rock":
-        msg = "You played PAPER. Computer played ROCK. You won!";
+      case 'rock':
+        msg = 'You played PAPER. Computer played ROCK. You won!';
         break;
-      case "paper":
+      case 'paper':
         msg = "You both played PAPER. It's a tie.";
         break;
-      case "scissors":
-        msg = "You played PAPER. Computer played SCISSORS. You lose!";
+      case 'scissors':
+        msg = 'You played PAPER. Computer played SCISSORS. You lose!';
     }
-  } else if (playerSelection == "scissors") {
+  } else if (playerSelection == 'scissors') {
     switch (computerSelection) {
-      case "rock":
-        msg = "You played SCISSORS. Computer played ROCK. You lost.";
+      case 'rock':
+        msg = 'You played SCISSORS. Computer played ROCK. You lost.';
         break;
-      case "paper":
-        msg = "You played SCISSORS. Computer played PAPER. You won!";
+      case 'paper':
+        msg = 'You played SCISSORS. Computer played PAPER. You won!';
         break;
-      case "scissors":
+      case 'scissors':
         msg = "You both played SCISSORS. It's a tie.";
     }
   } else {
-    msg = "You need to input rock, paper, or scissors to play.";
+    msg = 'You need to input rock, paper, or scissors to play.';
   }
 
   return msg;
